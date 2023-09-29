@@ -1,0 +1,17 @@
+body {
+  background-color: #000;
+}
+
+main .personagem {
+  display: none;
+}
+
+main .personagem.selecionado {
+  display: block;
+  color: white;
+}
+
+main .personagem .imagem {
+  width: 100%;
+  height: 100%;
+}
