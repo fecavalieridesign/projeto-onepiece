@@ -1,5 +1,6 @@
 body {
   background: #000;
+  overflow: hidden;
 }
 
 main::after {
@@ -10,7 +11,6 @@ main::after {
   min-height: 100vh;
   width: 80vw;
   background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
-  z-index: 0;
 }
 
 main .personagem {
@@ -52,7 +52,6 @@ main .personagem .imagem {
   color: #fff;
   font-family: "Rubik", sans-serif;
   line-height: 24px;
-
 }
 
 .conteudo .logo {
@@ -61,4 +60,34 @@ main .personagem .imagem {
   height: 100px;
   width: 230px;
   margin-bottom: 35px;
+}
+
+.botoes {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes .botao {
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.botoes .botao img {
+  border-radius: 50%;
+}
+
+.botoes .botao.selecionado {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #d9d9d9;
 }
